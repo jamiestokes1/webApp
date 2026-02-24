@@ -5,6 +5,9 @@ const router = express.Router();
 
 import start from './controllers/start.js';
 import dashboard from './controllers/dashboard.js';
+import logger from "./utils/logger.js";
+
+
 
 router.get('/', start.createView);
 router.get('/dashboard', dashboard.createView);
