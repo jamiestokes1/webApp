@@ -1,13 +1,17 @@
 'use strict';
 
-const appInfo = require('./appinfo.json');
+import logger from "../utils/logger.js";
 
-function getAppInfo() {
-  return appinfo;
-}
+const about = {
+createView(request, response){
+  logger.info("Application Information!");
 
-module.exports = {
-  getAppInfo
-};
+const viewData = {
+      title: "About"
+    };
 
-export default start;
+
+ response.render('About', viewData);
+  }
+  }
+export default about;
