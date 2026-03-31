@@ -31,10 +31,6 @@ helpers: {
     uppercase: (inputString) => {
        return inputString.toUpperCase();
     },
-	  
-    formatDate; (date) =>  {
-
-    },
 
   highlightPopular; (rating) => {
    let message = rating >= 4 ? "Popular with listeners!" :  "";
