@@ -38,15 +38,15 @@ helpers: {
 
 
 formatDate; (date) => {
-    let dateCreated = new Date(date);
-    let options = {
+      let dateCreated = new Date(date);
+      let options = {
       weekday: "long",
       year: "numeric",
       month: "long",
       day: "2-digit",
     };
     return `${dateCreated.toLocaleDateString("en-IE", options)}`;
-
+  }
 }
   highlightPopular: (rating) => {
    let message = rating >= 4 ? "Popular with listeners!" :  "";
@@ -55,5 +55,3 @@ formatDate; (date) => {
 
   }
 
-
-}
