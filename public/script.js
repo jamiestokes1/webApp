@@ -11,4 +11,7 @@ if(x >= 4){
 let instructor = "Elie";
 
 instructor === "Elie" ? console.log("Yes!") : console.log("No");
+$('.ui.rating')
+  .rating()
+;
 

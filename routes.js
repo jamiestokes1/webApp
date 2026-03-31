@@ -30,5 +30,7 @@ router.post('/playlist/:id/updatesong/:songid', playlist.updateSong);
 
 
 router.get('/error', (request, response) => response.status(404).end('Page not found.'));
+router.get('/stats', stats.createView);
+router.get('/searchCategory', dashboard.createView);
 
 export default router;

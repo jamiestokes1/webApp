@@ -25,6 +25,7 @@
     {
       "id" : "02",
       "title": "Beethoven Concertos",
+      "rating": 4, 
       "songs": [
         {
           "id" : "07",
